@@ -15,7 +15,7 @@ post '/register' do
   user = User.create(params[:user_info])
   puts user
   if user.valid?
-    redirect '/account/show'
+    redirect '/index'
   else
     status 422
     @errors = user.errors.full_messages
