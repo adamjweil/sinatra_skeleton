@@ -3,5 +3,5 @@ class Note  < ActiveRecord::Base
   belongs_to :user
   belongs_to :teacher
 
-  validates :user_id, :teacher_id, :note, presence: true
+  validates :title, :class, :content, presence: true
 end

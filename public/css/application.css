@@ -1,16 +1,17 @@
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+
+ul {
+  /*list-style-type: none;*/
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #333;
 }
 
-nav li {
+li {
     float: right;
 }
 
-nav li a {
+li a {
     display: block;
     color: white;
     text-align: center;
@@ -18,7 +19,7 @@ nav li a {
     text-decoration: none;
 }
 
-#login form {
+.login form {
     background-color: F8F8F8;
     width: 30%;
     border: 3px solid #f1f1f1;
@@ -69,11 +70,11 @@ nav li a {
   opacity: 0.7;
 }*/
 
-h1 {
+/*h1 {
   font-family: sans-serif;
   font-size: 200%;
   font-style: oblique;
   margin-left: 20px;
   text-decoration: underline;
   opacity: .9;
-}
+}*/
