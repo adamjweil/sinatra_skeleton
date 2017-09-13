@@ -1,11 +1,3 @@
-get '/' do
-  erb :index
-end
-
-get '/index' do
-  erb :index
-end
-
 # register
 get '/users/new' do
   erb :'users/new'
@@ -28,7 +20,7 @@ post '/sessions' do
   login
 end
 
-
+# logout
 delete '/logout' do
   session.delete(:user_id)
   redirect '/'

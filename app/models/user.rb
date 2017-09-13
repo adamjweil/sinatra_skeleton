@@ -1,11 +1,19 @@
 class User < ActiveRecord::Base
   # Remember to create a migration!
-  has_many :notes
-  has_many :teachers
 
-  validates :first_name, :last_name, :username, :email, :password_digest, presence: true
+  validates :username, :email, :password_digest, presence: true
   validates :email, uniqueness: true
 
   has_secure_password
 
+  has_many :resources
+
+  def self.authenticate(email, password)
+      user = User.find_by(email: email)
+      if user && user.password == password
+        user
+      else
+        nil
+      end
+  end
 end

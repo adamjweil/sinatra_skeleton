@@ -1,0 +1,17 @@
+<div id="nav">
+<nav>
+  <ul>
+<%current_user%>
+    <% if logged_in? %>
+    <li><a href='/users/show'>Account</a></li>
+    <li><a href='/logout'>Log out</a></li>
+    <li><a href='/resources/new'>Post</a></li>
+    <li ><a href='/resources'>Homepage</a></li>
+    <% else %>
+    <li><a href='/sessions/new'>Log in</a></li>
+    <li><a href='/users/new'>Register</a></li>
+    <li ><a href='/resources'>Homepage</a></li>
+    <% end %>
+  </ul>
+</nav>
+</div>
